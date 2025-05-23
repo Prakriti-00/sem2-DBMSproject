@@ -46,21 +46,3 @@ Gain hands-on experience in full-stack development using industry-standard tools
 
 Understand the importance of iterative development and user-centered design.
 
-📁 Project Structure
-pgsql
-Copy
-Edit
-virtual-pet-environment/
-├── frontend/
-│   ├── index.html
-│   ├── styles.css
-│   └── scripts.js
-├── backend/
-│   ├── index.js
-│   └── routes/
-│       └── petRoutes.js
-├── database/
-│   ├── schema.sql
-│   └── sample_data.sql
-├── README.md
-└── package.json
