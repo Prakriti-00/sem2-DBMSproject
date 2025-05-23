@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virtual Pet Manager</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <h1>🐶🐱🦜🐇Virtual Pet Manager 🐇🦜🐱🐶</h1>
+  <div id="user-display" class="hidden"></div>
+  <button id="logout-btn" class="logout-btn hidden">Logout</button>
+  </header>
+
+  <main>
+    <section id="register-section" class="auth-section">
+      <div class="card">
+        <h2>Create Account</h2>
+        <div class="form-group">
+          <input type="text" id="register-username" placeholder="Username" />
+          <input type="email" id="register-email" placeholder="Email" />
+          <button id="register-btn" class="primary-btn">Register</button>
+        </div>
+        <p id="register-msg" class="message"></p>
+      </div>
+    </section>
+
+    <section id="login-section" class="auth-section">
+      <div class="card">
+        <h2>Login</h2>
+        <div class="form-group">
+          <input type="text" id="login-userId" placeholder="User ID (optional)" />
+          <input type="email" id="login-email" placeholder="Email (optional)" />
+          <button id="login-btn" class="primary-btn">Login</button>
+        </div>
+        <p id="login-msg" class="message"></p>
+      </div>
+    </section>
+
+    <section id="pet-section" class="hidden">
+      <div class="card">
+        <h2>Add New Pet</h2>
+        <div class="form-group">
+          <input type="text" id="pet-name" placeholder="Pet Name" />
+          <select id="pet-type-id">
+            <option value="">Select Pet Type</option>
+          </select>
+          <input type="number" id="pet-age" placeholder="Age" min="1" />
+          <button id="add-pet-btn" class="primary-btn">Add Pet</button>
+        </div>
+        <p id="add-pet-msg" class="message"></p>
+      </div>
+
+      <div class="card">
+        <div class="section-header">
+          <h2>Your Pets</h2>
+          <button onclick="loadPets()" class="refresh-btn">Refresh</button>
+        </div>
+        <ul id="pets-list" class="pets-grid"></ul>
+      </div>
+    </section>
+
+    <section id="food-section" class="hidden">
+      <div class="card">
+        <h2>Available Foods</h2>
+        <ul id="food-options-list" class="options-list"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Recent Feeding Log</h2>
+        <ul id="food-log-list" class="log-list"></ul>
+      </div>
+    </section>
+
+    <section id="activities-section" class="hidden">
+      <div class="card">
+        <h2>Available Activities</h2>
+        <ul id="activity-options-list" class="options-list"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Recent Activity Log</h2>
+        <ul id="activities-log-list" class="log-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
