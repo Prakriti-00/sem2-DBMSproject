@@ -67,7 +67,7 @@ document.getElementById('login-btn').addEventListener('click', async () => {
       const userDisplay = document.getElementById('user-display');
       userDisplay.innerHTML = `
       <div style="background:white; color:black; padding:4px;">
-      Welcome ${data.username || 'undefined'}, user Id: ${data.userId || 'undefined'}
+      Welcome ${data.username || 'undefined'}, User id: ${data.userId || 'undefined'}
       </div>
       `;
 
